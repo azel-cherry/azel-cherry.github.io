@@ -6,17 +6,19 @@
 
 <body>
     <section>
+        <div class="bg"></div>
 
-        <div class="title-container">
+        <div class="main-content">
             <img src="imgs/logo.png" alt="Logo" class="logo">
-            <h1>
-                CIRERA.FUN
-            </h1>
+            <div class="text-content">
+                <h1>
+                    CIRERA.FUN
+                </h1>
+                <p>
+                    welcome to my website! :)
+                </p>
+            </div>
         </div>
-
-        <h2>
-            welcome to my website! :)
-        </h2>
 
     </section>
 
@@ -24,5 +26,43 @@
         peep cool animals
     </button>
 
+    <section class="footer">
+        made by Azel Cirera
+        <a href="https://github.com/azel-cherry" target="_blank">GitHub</a>
+        <a href="https://instagram.com/_nebuwula" target="_blank">Instagram</a>
+    </section>
+
+    <script>
+        const logo = document.querySelector('.logo');
+        let animationId = null;
+        let currentRotation = 0;
+        let isSpinning = false;
+
+        function spinLogo() {
+            currentRotation += 2; // Adjust speed here
+            logo.style.transform = `rotate(${currentRotation}deg) scale(1.08)`;
+            if (isSpinning) {
+                animationId = requestAnimationFrame(spinLogo);
+            }
+        }
+
+        logo.addEventListener('mouseenter', () => {
+            isSpinning = true;
+            spinLogo();
+        });
+
+        logo.addEventListener('mouseleave', () => {
+            isSpinning = false;
+            if (animationId) {
+                cancelAnimationFrame(animationId);
+            }
+            // Smooth transition back to original position
+            logo.style.transition = 'transform 0.5s ease-out';
+            logo.style.transform = 'rotate(0deg) scale(1)';
+            setTimeout(() => {
+                logo.style.transition = '';
+            }, 500);
+        });
+    </script>
 </body>
 </html>
