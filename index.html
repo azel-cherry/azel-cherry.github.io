@@ -5,64 +5,32 @@
 </head>
 
 <body>
-    <section>
-        <div class="bg"></div>
+    <header>
+    </header>
 
+    <section class="striped">
         <div class="main-content">
             <img src="imgs/logo.png" alt="Logo" class="logo">
             <div class="text-content">
-                <h1>
-                    CIRERA.FUN
-                </h1>
-                <p>
-                    welcome to my website! :)
-                </p>
+                <h1> CIRERA.FUN </h1>
+                <p> welcome to my website! :) </p>
             </div>
         </div>
-
-    </section>
+    </section class="striped">
 
     <button onclick="window.location.href='coolanimals/'">
         peep cool animals
     </button>
 
-    <section class="footer">
+    <section class="striped footer">
         made by Azel Cirera
         <a href="https://github.com/azel-cherry" target="_blank">GitHub</a>
         <a href="https://instagram.com/_nebuwula" target="_blank">Instagram</a>
     </section>
 
-    <script>
-        const logo = document.querySelector('.logo');
-        let animationId = null;
-        let currentRotation = 0;
-        let isSpinning = false;
+<script src="utils/utils.js"></script>
+<script src="utils/footer.js"></script>
+<script src="utils/header.js"></script>
 
-        function spinLogo() {
-            currentRotation += 2; // Adjust speed here
-            logo.style.transform = `rotate(${currentRotation}deg) scale(1.08)`;
-            if (isSpinning) {
-                animationId = requestAnimationFrame(spinLogo);
-            }
-        }
-
-        logo.addEventListener('mouseenter', () => {
-            isSpinning = true;
-            spinLogo();
-        });
-
-        logo.addEventListener('mouseleave', () => {
-            isSpinning = false;
-            if (animationId) {
-                cancelAnimationFrame(animationId);
-            }
-            // Smooth transition back to original position
-            logo.style.transition = 'transform 0.5s ease-out';
-            logo.style.transform = 'rotate(0deg) scale(1)';
-            setTimeout(() => {
-                logo.style.transition = '';
-            }, 500);
-        });
-    </script>
 </body>
 </html>

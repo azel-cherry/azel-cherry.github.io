@@ -1,2 +1,2 @@
-# azel-cherry.github.io
+# cirera.fun
 Personal silly little website.
