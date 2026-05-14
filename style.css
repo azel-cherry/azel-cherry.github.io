@@ -12,18 +12,25 @@
   font-family: 'Gloria Hallelujah';
   src: url('/fonts/gloriahallelujah.woff2') format('woff2');
 }
+@font-face {
+  font-family: 'Cascadia';
+  src: url('/fonts/cascadia-code.woff2') format('woff2');
+}
 
 
 /* ==== VARIABLES ==== */
 
 :root {
   --main: #785bf9;
-  --main-dark: #442c9b;
-  --main-darker: #1e1b4d;
   --accent1: #ff3fa2;
   --accent2: #b791ff;
   --bg: #f5a7f1;
   --light: #f9c4ff;
+
+  --noise1: #ff9d68;
+  --noise2: #ff65b4;
+  --noise3: #a16eff;
+
   line-height: 1;
 }
 
@@ -41,6 +48,7 @@
   100% { transform: rotate(360deg); }
 }
 
+
 /* ==== BASE STYLES ==== */
 
 body {
@@ -50,9 +58,7 @@ body {
   font-family: 'Gloria Hallelujah';
   font-weight: bold;
   color: var(--main);
-  background: linear-gradient(284deg, var(--accent2) 0%, var(--accent1) 50%, rgb(248, 150, 93) 100%);
-  background-size: 400% 400%;
-  animation: gradientShift 8s ease infinite;
+  margin: 0;
 }
 
 h1 {
@@ -76,10 +82,6 @@ h2 {
 h2:hover {
   color: var(--accent1);
   scale: 1.1;
-}
-
-body {
-  margin: 0;
 }
 
 p {
@@ -108,6 +110,7 @@ section {
   padding: 30px;
   border-radius: 50px;
   background-color: var(--light);
+  box-shadow: color-mix(in srgb, var(--main) 30%, transparent) 15px 15px;
 }
 
 .striped {
@@ -125,12 +128,12 @@ header {
   align-items: center;
   height: 50px;
   gap: 15px;
-  padding: 10px 20px;
-  background-color: var(--main);
-  border-bottom: var(--bg) 10px solid;
+  padding: 30px 20px 20px 40px;
+  background-color: color-mix(in srgb, var(--bg) 50%, transparent);
   h1 {
     font-size: 40px;
     color: var(--light);
+    padding: 20px 0 0 5px;
   }
   svg {
     fill: var(--light);
@@ -166,6 +169,7 @@ header {
   margin: 10px 0 0;
   gap: 10px;
   background-color: transparent;
+  box-shadow: none;
 }
 .links a {
   transition: transform 180ms ease;
@@ -177,6 +181,15 @@ header {
 
 
 /* ==== LAYOUT COMPONENTS ==== */
+
+#bg-noise {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
 
 .main-content {
   display: flex;
@@ -215,22 +228,35 @@ button {
   display: block;
   margin: 24px auto 0;
   padding: 10px 18px;
-  font-family: 'Gloria Hallelujah';
+  font-family: 'Cascadia';
   font-size: 20px;
   color: var(--light);
   background: var(--main);
   border: none;
-  border-bottom: 10px solid var(--main-dark);
+  border-bottom: 10px solid color-mix(in srgb, var(--main) 70%, black);
   border-radius: 20px;
   cursor: pointer;
   transition: transform 180ms ease;
 }
 button:hover {
-  background: var(--main-dark);
-  border-bottom-color: var(--main-darker);
+  background: color-mix(in srgb, var(--main) 70%, black);
+  border-bottom-color: color-mix(in srgb, var(--main) 50%, black);
   transform: scale(1.05);
 }
 button:active {
-  border-bottom-color: var(--main-darker);
+  border-bottom-color: color-mix(in srgb, var(--main) 50%, black);
   transform: translateY(10px);
+}
+
+#search {
+  display: block;
+  margin: 24px auto 0;
+  padding: 10px 18px;
+  font-family: 'Cascadia';
+  font-size: 20px;
+  color: var(--main);
+  background: color-mix(in srgb, var(--light) 70%, transparent);
+  border: none;
+  border-bottom: 2px solid var(--main);
+  border-radius: 0;
 }

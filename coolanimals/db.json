@@ -1,0 +1,18 @@
+[
+  {
+    "id": "manulcat",
+    "name": "Manul Cat",
+    "type": "mammal",
+    "subtype": "cat",
+    "img": "manulcat/round.jpg",
+    "url": "manulcat/"
+  },
+  {
+    "id": "morelet",
+    "name": "Morelet's Tree Frog",
+    "type": "amphibian",
+    "subtype": "frog",
+    "img": "morelet/polite.jpg",
+    "url": "morelet/"
+  }
+]
