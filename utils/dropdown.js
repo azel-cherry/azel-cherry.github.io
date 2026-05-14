@@ -17,11 +17,9 @@ filterBtn.addEventListener('click', () => {
   filterMenu.classList.toggle('open');
 });
 
-// close if you click anywhere else
-document.addEventListener('click', e => {
-  if (!e.target.closest('.dropdown')) {
-    filterMenu.classList.remove('open');
-  }
+// close if you hover anywhere else
+document.querySelector('.dropdown').addEventListener('mouseleave', () => {
+  filterMenu.classList.remove('open');
 });
 
 // handle option selection

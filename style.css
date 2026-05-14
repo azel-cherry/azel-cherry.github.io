@@ -121,8 +121,8 @@ section {
 .striped {
   background-image: repeating-linear-gradient(
     45deg,
-    rgba(250, 91, 200, 0.1) 0px,
-    rgba(250, 91, 200, 0.1) 20px,
+    color-mix(in srgb, var(--accent1) 10%, transparent) 0px,
+    color-mix(in srgb, var(--accent1) 10%, transparent) 20px,
     transparent 20px,
     transparent 40px
   );
@@ -324,6 +324,7 @@ input::placeholder {
   width: 100%;
   line-height: 75%;
   background: color-mix(in srgb, var(--light) 70%, transparent);
+  backdrop-filter: blur(10px);
   border-radius: 20px;
   padding: 5px 0;
   overflow: hidden;

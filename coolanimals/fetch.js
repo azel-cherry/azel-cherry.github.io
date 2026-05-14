@@ -29,7 +29,7 @@ document.getElementById('search').addEventListener('input', e => {
 // random
 document.getElementById('random-btn').addEventListener('click', () => {
   const animal = animals[Math.floor(Math.random() * animals.length)];
-  window.location.href = `animal.html?id=${animal.id}`;
+  window.location.href = `${animal.url}`;
 });
 
 window.renderAnimals(animals); // show all on load
