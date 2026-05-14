@@ -13,29 +13,30 @@
     <section class="striped">
         <h2>cool fucking</h2>
         <h1>ANIMALS</h1>
-        <p>in developement!! :0</p>
+        <h3>cool animals i've found along the years.<br>keep checking for more additions!!</h3>
     </section>
-<!-- 
-    <input id="search" type="text" placeholder="search animals...">
 
-    <select id="type-filter">
-        <option value="">all types</option>
-        <option value="mammal">mammal</option>
-        <option value="bird">borb</option>
-        <option value="reptile">reptile</option>
-        <option value="amphibian">amphibian</option>
-        <option value="fish">feesh</option>
-    </select>
+    <section class="search-bar">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580t75.5-184.5T380-840t184.5 75.5T640-580q0 44-14 83t-38 69l252 252zM380-400q75 0 127.5-52.5T560-580t-52.5-127.5T380-760t-127.5 52.5T200-580t52.5 127.5T380-400"/></svg>
 
-    <select id="subtype-filter">
-        <option value="">all subtypes</option>
-        <option value="cat">cat</option>
-        <option value="frog">frog</option>
-    </select>
+        <input id="search" type="text" placeholder="search animals...">
+            
+        <div class="dropdown">
+            <button class="dropdown-toggle search" id="filter-btn">all types</button>
+            <div class="dropdown-menu" id="filter-menu">
+                <div class="dropdown-option" data-value="">all types</div>
+                <div class="dropdown-option" data-value="mammal">mammal</div>
+                <div class="dropdown-option" data-value="bird">borb</div>
+                <div class="dropdown-option" data-value="amphibian">amphibian</div>
+                <div class="dropdown-option" data-value="reptile">reptile</div>
+                <div class="dropdown-option" data-value="fish">feesh</div>
+            </div>
+        </div>
 
-    <button id="random-btn">random!</button>
+        <button class="search" id="random-btn">random!</button>
+    </section>
 
-    <div id="animals-container"></div> -->
+    <div id="animal-containers"></div>
 
     <section class="striped footer">
     </section>
@@ -44,5 +45,7 @@
 <script src="../utils/header.js"></script>
 <script src="../utils/footer.js"></script>
 <script type="module" src="../utils/noise.js"></script>
+<script type="module" src="../utils/dropdown.js"></script>
+<script type="module" src="fetch.js"></script>
 </body>
 </html>
