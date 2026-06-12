@@ -1,13 +1,12 @@
 :root {
-  --main: #785bf9;
-  --accent1: #ff3fa2;
-  --accent2: #b791ff;
-  --bg: #f5a7f1;
-  --light: #f9c4ff;
+  --main: #a33e79;
+  --accent: #66a979;
+  --bg: #d9efbe;
+  --light: #f6fbdb;
 
-  --noise1: #ff9d68;
-  --noise2: #ff65b4;
-  --noise3: #a16eff;
+  --noise1: #a33e79;
+  --noise2: #9fb169;
+  --noise3: #66a979;
 }
 
 #animal-containers {
@@ -18,14 +17,19 @@
 
 .animal-card {
   width: 200px;
-  background-color: var(--light);
-  border-radius: 20px;
+  background-color: transparent;
+  box-shadow: none;
   padding: 15px;
   cursor: pointer;
   transition: scale 180ms ease;
   p {
+    background-color: var(--light);
+    border-radius: 20px;
+    box-shadow: color-mix(var(--main) 30%, transparent) 10px 10px;
     line-height: 1.4;
+    padding: 7px 15px;
     margin: 15px 0 0;
+    font-weight: bold;
   }
   img {
     width: 100%;
@@ -36,6 +40,8 @@
 }
 .animal-card:hover {
   scale: 1.05;
-  background-color: var(--main);
-  color: var(--light);
+  p {
+    background-color: var(--main);
+    color: var(--light);
+  }
 }

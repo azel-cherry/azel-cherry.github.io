@@ -1,16 +1,17 @@
 [
   {
-    "id": "manulcat",
-    "name": "Manul Cat",
-    "type": "mammal",
-    "img": "manul-cat/round.jpg",
-    "url": "./manul-cat/"
+    "id": "pallas-cat",
+    "name": "Pallas's Cat",
+    "type": "mammal"
   },
   {
-    "id": "moreletfrog",
+    "id": "morelet-frog",
     "name": "Morelet's Tree Frog",
-    "type": "amphibian",
-    "img": "morelets-tree-frog/polite.jpg",
-    "url": "./morelets-tree-frog/"
+    "type": "amphibian"
+  },
+  {
+    "id": "leaf-slug",
+    "name": "Leaf Slug",
+    "type": "fish"
   }
 ]

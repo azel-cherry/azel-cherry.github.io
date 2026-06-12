@@ -1,0 +1,40 @@
+h3 {
+    font-family: 'Cascadia';
+    font-style: italic;
+}
+
+.striped {
+    padding: 30px 50px;
+}
+.main-content {
+  display: space-around;
+  position: relative;
+}
+.text-content {
+  position: relative;
+  align-items: flex-start;
+  h1 {
+    text-align: left;
+  }
+}
+.icon {
+  position: relative;
+}
+
+.footer {
+  padding: 20px 40px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+  margin: 20px 0 0;
+  gap: 50px;
+  img {
+    height: 200px;
+    border-radius: 15px;
+    box-shadow: color-mix(var(--main) 50%, transparent) 10px 10px;
+  }
+}

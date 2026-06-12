@@ -4,8 +4,8 @@ const animals = await response.json();
 window.renderAnimals = function(list) {
   const container = document.getElementById('animal-containers');
   container.innerHTML = list.map(animal => `
-    <section class="animal-card" onclick="window.location.href='${animal.url}'">
-      <img src="${animal.img}">
+    <section class="animal-card" onclick="window.location.href='./${animal.id}/'">
+      <img src="${animal.id}/imgs/icon.png">
       <p>${animal.name}</p>
     </section>
   `).join('');
