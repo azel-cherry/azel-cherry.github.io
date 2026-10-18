@@ -1,57 +1,57 @@
 h3 {
-    font-family: 'Cascadia';
-    font-style: italic;
+        font-family: 'Cascadia';
+        font-style: italic;
 }
 
 .striped {
-    padding: 30px 50px;
+        padding: 30px 50px;
 }
 
 .main-content {
-  display: flex;
-  justify-content: space-around;
-  position: relative;
-  margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin: 0 auto;
 }
 
 .text-content {
-  position: relative;
-  align-items: flex-start;
-  h1 {
-    text-align: left;
-  }
+    position: relative;
+    align-items: flex-start;
+    h1 {
+        text-align: left;
+    }
 }
 
 .icon {
-  position: relative;
+    position: relative;
 }
 
 .footer {
-  padding: 20px 40px;
+    padding: 20px 40px;
 }
 
 .image-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding: 0;
-  margin: 20px 0 0;
-  gap: 50px;
-  img {
-    height: 200px;
-    border-radius: 15px;
-    box-shadow: color-mix(var(--main) 50%, transparent) 10px 10px;
-  }
-  iframe {
-    height: 350px;
-    width: 622px;
-    border-radius: 15px;
-    box-shadow: color-mix(var(--main) 50%, transparent) 10px 10px;
-  }
-  video {
-    height: 350px;
-    border-radius: 15px;
-    box-shadow: color-mix(var(--main) 50%, transparent) 10px 10px;
-  }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 20px 0 15px;
+    gap: 50px;
+    img {
+        height: 200px;
+        border-radius: 15px;
+        box-shadow: color-mix(var(--main) 50%, transparent) 10px 10px;
+    }
+    iframe {
+        height: 350px;
+        width: 622px;
+        border-radius: 15px;
+        box-shadow: color-mix(var(--main) 50%, transparent) 10px 10px;
+    }
+    video {
+        height: 350px;
+        border-radius: 15px;
+        box-shadow: color-mix(var(--main) 50%, transparent) 10px 10px;
+    }
 }

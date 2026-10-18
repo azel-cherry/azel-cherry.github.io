@@ -12,6 +12,11 @@
   {
     "id": "leaf-slug",
     "name": "Leaf Slug",
+    "type": "bug"
+  },
+  {
+    "id": "dumbo-octopus",
+    "name": "Dumbo Octopus",
     "type": "fish"
   }
 ]

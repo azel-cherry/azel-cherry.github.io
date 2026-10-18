@@ -64,11 +64,11 @@ h1 {
     font-size: 80px;
     margin: 0;
     color: var(--main);
-    transition: transform 180ms ease;
+    transition: scale 180ms ease;
 }
 h1:hover {
     color: var(--accent);
-    transform: scale(1.1);
+    scale: 1.1;
 }
 
 h2 {
@@ -120,7 +120,7 @@ section {
 .striped {
     line-height: 1;
     width: min(80%, 1000px);
-    margin: 50px auto 0;
+    margin: 50px auto 50px;
     background-image: repeating-linear-gradient(
         45deg,
         color-mix(in srgb, var(--accent) 10%, transparent) 0px,
@@ -130,7 +130,9 @@ section {
     );
 }
 .transparent {
-    margin: 0 auto;
+    margin: 0;
+	padding: 0;
+	align-self: center;
     background-color: transparent;
     box-shadow: none;
     max-width: 90%;
@@ -200,13 +202,10 @@ header {
 
 .footer {
     font-family: 'Gloria Hallelujah';
+	width: auto;
     font-weight: bold;
     margin-top: auto;
-    align-self: center;
     padding: 20px 40px;
-    border-radius: 40px;
-    font-size: 20px;
-    text-align: center;
     line-height: 1.5;
     svg {
         fill: var(--main);
