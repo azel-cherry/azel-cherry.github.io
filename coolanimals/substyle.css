@@ -37,7 +37,7 @@ h3 {
     justify-content: center;
     padding: 0;
     margin: 20px 0 15px;
-    gap: 50px;
+    gap: 25px 50px;
     img {
         height: 200px;
         border-radius: 15px;
@@ -53,5 +53,16 @@ h3 {
         height: 350px;
         border-radius: 15px;
         box-shadow: color-mix(var(--main) 50%, transparent) 10px 10px;
+    }
+    figure {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    figcaption {
+        margin-top: 15px;
+        font-style: italic;
+        color: color-mix(var(--main) 90%, black);
     }
 }

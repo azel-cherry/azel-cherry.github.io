@@ -6,8 +6,8 @@
   },
   {
     "id": "morelet-frog",
-    "name": "Morelet's Tree Frog",
-    "type": "amphibian"
+    "name": "Morelet's<br>Tree Frog",
+    "type": "reptile"
   },
   {
     "id": "leaf-slug",
@@ -18,5 +18,10 @@
     "id": "dumbo-octopus",
     "name": "Dumbo Octopus",
     "type": "fish"
+  },
+  {
+    "id": "shoebill",
+    "name": "Shoebill",
+    "type": "bird"
   }
 ]

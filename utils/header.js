@@ -15,7 +15,8 @@ const names = {
     'coolanimals': 'cool animals',
     'pallas-cat': "pallas's cat",
     'morelet-frog': "morelet's tree frog",
-    'leaf-slug': "leaf slug"
+    'leaf-slug': "leaf slug",
+    'dumbo-octopus': "dumbo octopus",
 };
 
 const path = window.location.pathname
